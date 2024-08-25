@@ -3,7 +3,7 @@ const express = require('express');
 const router = new express.Router();
 
 router.get("/",  (req, res) => {
-    return "Hello guys!";
+    res.status(200).json({ message : "Up" });
 })
 
 // GET route to return the operation code
