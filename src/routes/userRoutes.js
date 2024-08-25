@@ -2,6 +2,10 @@ const express = require('express');
 
 const router = new express.Router();
 
+router.get("/",  (req, res) => {
+    return "Hello guys!";
+})
+
 // GET route to return the operation code
 router.get('/bfhl', (req, res) => {
     try {
